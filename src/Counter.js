@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 
 class Counter extends React.Component {
   increment = () => {
-    // fill in later
+    this.props.dispatch({ type: 'INCREMENT' });
   }
 
   decrement = () => {
-    // fill in later
+    this.props.dispatch({ type: 'DECREMENT' });
   }
 
   render() {
@@ -24,15 +24,10 @@ class Counter extends React.Component {
   }
 }
 
-// Add this function:
 function mapStateToProps(state) {
   return {
     count: state.count
   };
 }
 
-// Then replace this:
-// export default Counter;
-
-// With this:
 export default connect(mapStateToProps)(Counter);
