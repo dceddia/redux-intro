@@ -4,7 +4,12 @@ import Counter from './Counter';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-const store = createStore();
+function reducer() {
+  // just gonna leave this blank for now
+  // which is the same as `return undefined;`
+}
+
+const store = createStore(reducer);
 
 const App = () => (
   <Provider store={store}>
