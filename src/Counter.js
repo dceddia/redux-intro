@@ -1,18 +1,12 @@
 import React from 'react';
 
 class Counter extends React.Component {
-  state = { count: 0 }
-
   increment = () => {
-    this.setState({
-      count: this.state.count + 1
-    });
+    // fill in later
   }
 
   decrement = () => {
-    this.setState({
-      count: this.state.count - 1
-    });
+    // fill in later
   }
 
   render() {
@@ -21,7 +15,7 @@ class Counter extends React.Component {
         <h2>Counter</h2>
         <div>
           <button onClick={this.decrement}>-</button>
-          <span>{this.state.count}</span>
+          <span>{this.props.count}</span>
           <button onClick={this.increment}>+</button>
         </div>
       </div>
