@@ -5,8 +5,9 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 function reducer() {
-  // just gonna leave this blank for now
-  // which is the same as `return undefined;`
+  return {
+    count: 42
+  };
 }
 
 const store = createStore(reducer);
